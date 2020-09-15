@@ -8,13 +8,12 @@
 // Return Value:    true or false, depending on whether item is in anArray
 
 function includes(item, anArray) {
-    for (i = 0; i < anArray.length; i++) {
+    for (let i = 0; i < anArray.length; i++) {
         if (anArray[i] == item) {
             return true;
-        } else {
-            return false;
         }
     }
+    return false;
 }
 
 // 2. WRITE YOUR OWN VERSION OF MATH.MIN (do not use Math.min)
@@ -24,9 +23,15 @@ function includes(item, anArray) {
 // Return Value:    The minimum value in anArray.
 
 function minItem(anArray) {
-
+    let minGrade = 100;
+    for (let i = 0; i < anArray.length; i++) {
+        if (minGrade > anArray[i]) {
+            minGrade = anArray[i];
+        }
+        
+    }
+    return minGrade;
 }
-
 
 
 // 3. WRITE YOUR OWN VERSION OF MATH.MAX (do not use Math.max)
@@ -35,10 +40,16 @@ function minItem(anArray) {
 // Purpose:         Determine the maximum value in anArray.
 // Return Value:    The mmaximum value in anArray.
 
-function maxItem (anArray) {
-
+function maxItem(anArray) {
+    let maxGrade = 0;
+    for (let i = 0; i < anArray.length; i++) {
+        if (maxGrade < anArray[i]) {
+            maxGrade = anArray[i];
+        }
+        
+    }
+    return maxGrade;
 }
-
 
 
 // 4. WRITE A FUNCTION TO DETERMINE THE AVERAGE OF ARRAY ITEMS
@@ -48,5 +59,9 @@ function maxItem (anArray) {
 // Return Value:    The average of the values in anArray.]
 
 function arrayAverage(anArray) {
-    let total = //(total of all grade percent) / anArray.length * 100;
+    let total = 0;
+    for (let i = 0; i < anArray.length; i++) {
+        total += anArray[i];
+    }
+    return (total / anArray.length);
 }
