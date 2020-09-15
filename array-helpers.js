@@ -17,7 +17,6 @@ function includes(item, anArray) {
     }
 }
 
-
 // 2. WRITE YOUR OWN VERSION OF MATH.MIN (do not use Math.min)
 // Function Name:   minItem
 // Parameters:      anArray: an array of numbers
@@ -33,7 +32,7 @@ function minItem(anArray) {
 // 3. WRITE YOUR OWN VERSION OF MATH.MAX (do not use Math.max)
 // Function Name:   maxItem
 // Parameters:      anArray: an array of numbers
-// Purpose:         Determine the minimum value in anArray.
+// Purpose:         Determine the maximum value in anArray.
 // Return Value:    The mmaximum value in anArray.
 
 function maxItem (anArray) {
@@ -49,5 +48,5 @@ function maxItem (anArray) {
 // Return Value:    The average of the values in anArray.]
 
 function arrayAverage(anArray) {
-
+    let total = //(total of all grade percent) / anArray.length * 100;
 }
