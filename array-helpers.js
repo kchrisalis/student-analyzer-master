@@ -16,6 +16,8 @@ function includes(item, anArray) {
     return false;
 }
 
+
+
 // 2. WRITE YOUR OWN VERSION OF MATH.MIN (do not use Math.min)
 // Function Name:   minItem
 // Parameters:      anArray: an array of numbers
@@ -34,6 +36,7 @@ function minItem(anArray) {
 }
 
 
+
 // 3. WRITE YOUR OWN VERSION OF MATH.MAX (do not use Math.max)
 // Function Name:   maxItem
 // Parameters:      anArray: an array of numbers
@@ -50,6 +53,7 @@ function maxItem(anArray) {
     }
     return maxGrade;
 }
+
 
 
 // 4. WRITE A FUNCTION TO DETERMINE THE AVERAGE OF ARRAY ITEMS
